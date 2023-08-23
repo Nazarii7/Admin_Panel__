@@ -7,8 +7,10 @@ const Layout: FC<PropsWithChildren<IMeta>> = ({ children, ...meta }) => {
   return (
     <div>
       <Meta {...meta} />
-      <Header />
-      <main>{children}</main>
+      <div>
+        <Header />
+        <main className="p-4">{children}</main>
+      </div>
     </div>
   );
 };
