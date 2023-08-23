@@ -2,4 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff45;
+}
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
