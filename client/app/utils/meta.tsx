@@ -6,7 +6,6 @@ const Meta: FC<IMeta> = ({ description, title }) => {
   return (
     <>
       <Head>
-        <link rel="stylesheet" href="" />
         <link rel="icon" href="/favicon.ico?v=1" />
         <link
           rel="apple-touch-icon"

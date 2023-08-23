@@ -39,7 +39,8 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.scss",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    ".stylelintrc.ts"
   ],
   "exclude": ["node_modules"]
 }

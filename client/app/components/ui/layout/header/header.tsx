@@ -2,11 +2,11 @@ import React, { FC } from "react";
 import Logo from "@/ui/layout/header/logo";
 import LoginForm from "@/ui/layout/login_form/login_form";
 
-//import styles from "./header.module.scss";
+import styles from "./header.module.scss";
 
 const Header: FC = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <Logo />
       <LoginForm />
     </header>
