@@ -36,7 +36,28 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(({ addUtilities }) => {
+    plugin(({ addUtilities, addComponents }) => {
+      addComponents({
+        ".shadow-icon": {
+          border: "none",
+          outline: "none",
+
+          cursor: "pointer",
+          padding: "0.6rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "2.7rem",
+          transition: "box-shadow .4s ease-in-out",
+          boxShadow: "0 4px 10px rgba(82, 120, 209, 0.3)",
+          color: "#295bcf",
+          borderRadius: "50%",
+          backgroundColor: "rgb(30 58 138)",
+          "&:hover": {
+            boxShadow: "0 4px 16px rgba(82, 120, 209, 0.9)",
+          },
+        },
+      });
       addUtilities({
         ".flex-center-between": {
           display: "flex",

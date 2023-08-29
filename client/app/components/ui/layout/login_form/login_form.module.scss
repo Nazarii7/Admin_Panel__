@@ -2,22 +2,15 @@
   @apply relative inline-flex;
 
   .form {
-    @apply p-4 absolute right-2 w-44 z-20;
+    @apply p-4 absolute right-2 w-60 z-20 rounded-lg;
     top: calc(100% + 1.4rem);
+    background-color: rgb(30 58 138);
 
     .register {
-      @apply opacity-40 block text-center w-full;
-      font-size: 0.7rem;
+      @apply text-white block text-center w-full;
     }
   }
   .button {
-    @apply border-none outline-0 bg-blue-900 rounded-full cursor-pointer p-2
-    flex-center-center text-3xl transition-shadow;
-    box-shadow: 0 4px 10px rgba(82, 120, 209, 0.3);
-    color: #295bcf;
-
-    &:hover {
-      box-shadow: 0 4px 16px rgba(82, 120, 209, 0.9);
-    }
+    @apply shadow-icon;
   }
 }
