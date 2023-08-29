@@ -12,8 +12,12 @@
   }
   .button {
     @apply border-none outline-0 bg-blue-900 rounded-full cursor-pointer p-2
-    flex-center-center text-3xl;
-    box-shadow: 0 3px 6px #5278d1;
+    flex-center-center text-3xl transition-shadow;
+    box-shadow: 0 4px 10px rgba(82, 120, 209, 0.3);
     color: #295bcf;
+
+    &:hover {
+      box-shadow: 0 4px 16px rgba(82, 120, 209, 0.9);
+    }
   }
 }

@@ -10,13 +10,18 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      sm: "0.8rem",
-      base: "1rem",
-      xl: "1.25rem",
-      "2xl": "1.563rem",
-      "3xl": "1.953rem",
-      "4xl": "2.441rem",
-      "5xl": "3.052rem",
+      xs: "1.1rem",
+      sm: "1.21rem",
+      tiny: "1.27rem",
+      base: "1.46rem",
+      lg: "1.64rem",
+      xl: "1.825rem",
+      "2xl": "2.2rem",
+      "3xl": "2.7rem",
+      "4xl": "3.25rem",
+      "5xl": "4.3rem",
+      "6xl": "5.8rem",
+      "7xl": "7.3rem",
     },
     extend: {
       colors: {
