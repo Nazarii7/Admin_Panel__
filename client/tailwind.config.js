@@ -39,15 +39,11 @@ module.exports = {
     plugin(({ addUtilities, addComponents }) => {
       addComponents({
         ".shadow-icon": {
-          border: "none",
-          outline: "none",
-
-          cursor: "pointer",
-          padding: "0.6rem",
           display: "flex",
+          padding: "0.4rem",
           alignItems: "center",
           justifyContent: "center",
-          fontSize: "2.7rem",
+          fontSize: "2rem",
           transition: "box-shadow .4s ease-in-out",
           boxShadow: "0 4px 10px rgba(82, 120, 209, 0.3)",
           color: "#295bcf",
