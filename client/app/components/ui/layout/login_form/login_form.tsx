@@ -10,7 +10,7 @@ import { Field } from "../../field/field";
 import { Button } from "../../button/button";
 import { validEmail } from "./login_auth.constant";
 import { UserAvatar } from "../../user_avatar/user_avatar";
-import { FADE_IN, MENU_ANIMATION } from "@/utils/animation/fade";
+import { MENU_ANIMATION } from "@/utils/animation/fade";
 import { motion } from "framer-motion";
 
 const LoginForm: FC = () => {
@@ -22,6 +22,7 @@ const LoginForm: FC = () => {
     register,
     formState: { errors },
     handleSubmit,
+    reset,
   } = useForm<IAuthField>({
     mode: "onChange",
   });
@@ -36,12 +37,18 @@ const LoginForm: FC = () => {
         avatarPath: "/avatar.avif",
         name: "VanNic",
       });
+    reset();
+    setIsShow(false);
   };
 
   return (
     <div className={styles.wrapper} ref={ref}>
       {user ? (
-        <UserAvatar avatarPath={user.avatarPath || ""} />
+        <UserAvatar
+          link="/dashboard"
+          title="Go to dashboard"
+          avatarPath={user.avatarPath || ""}
+        />
       ) : (
         <button onClick={() => setIsShow(!isShow)} className={styles.button}>
           <FaRegUserCircle />
@@ -78,7 +85,7 @@ const LoginForm: FC = () => {
             type={"password"}
             autoComplete="current-password"
           />
-          <div className="mt-5 mb-1 text-center">
+          <div className={styles.loginButton}>
             <Button onClick={() => setType("login")}>Login</Button>
           </div>
           <button

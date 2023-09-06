@@ -7,7 +7,11 @@
     background-color: rgb(30 58 138);
 
     .register {
-      @apply text-white block text-center w-full;
+      @apply text-white block text-center text-xs font-light mt-2 w-full;
+    }
+
+    .loginButton {
+      @apply mt-5 mb-1 text-center;
     }
   }
   .button {
